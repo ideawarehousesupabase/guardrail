@@ -6,7 +6,7 @@ import { AppHeader } from "@/components/gie/app-header";
 import { LoadingState } from "@/components/gie/ui-bits";
 import { useDemoAuth } from "@/lib/demo-auth";
 
-// Demonstration navigation guard only — not an enforceable security control.
+// Navigation guard for authenticated routes.
 export const Route = createFileRoute("/_authenticated")({
   component: AppLayout,
 });

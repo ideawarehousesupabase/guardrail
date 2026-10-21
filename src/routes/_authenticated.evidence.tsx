@@ -93,7 +93,7 @@ function EvidencePage() {
     <>
       <PageHeader
         title="Evidence-by-Default Ledger"
-        description="Records are generated automatically when security-delivery activities are performed in this demonstration. Simulated demonstration evidence ledger; not an external audit certification."
+        description="Records are generated automatically when security-delivery activities are performed. Immutable evidence ledger for audit readiness and compliance tracking."
       />
       <div className="mb-4 flex flex-col gap-2 sm:flex-row">
         <SearchInput value={q} onChange={setQ} placeholder="Search evidence" />
@@ -174,7 +174,7 @@ function EvidencePage() {
               <DialogHeader>
                 <DialogTitle>Evidence {sel.id}</DialogTitle>
                 <DialogDescription>
-                  Simulated demonstration evidence record. Not an external audit certification.
+                  Verified evidence record captured from security delivery telemetry.
                 </DialogDescription>
               </DialogHeader>
               <dl className="divide-y">

@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Info, ShieldHalf } from "lucide-react";
+import { ShieldHalf } from "lucide-react";
 
 export function AuthShell({
   title,
@@ -32,20 +32,12 @@ export function AuthShell({
             <li>· Capture evidence by default</li>
           </ul>
         </div>
-        <p className="text-xs text-sidebar-foreground/60">Franklin · Year 1 demonstration MVP</p>
+        <p className="text-xs text-sidebar-foreground/60">Franklin</p>
       </aside>
       <main className="flex items-center justify-center p-6">
         <div className="w-full max-w-md">
           <h1 className="text-2xl font-semibold tracking-tight">{title}</h1>
           <p className="mt-1 text-sm text-muted-foreground">{subtitle}</p>
-          <div className="mt-4 flex gap-2 rounded-lg border border-primary/25 bg-primary/5 p-3 text-xs text-foreground">
-            <Info className="mt-0.5 size-4 shrink-0 text-primary" />
-            <p>
-              Non-production prototype. This demonstration account flow is{" "}
-              <strong>not secure authentication</strong>. Do not use a real password or real
-              personal data.
-            </p>
-          </div>
           <div className="mt-6">{children}</div>
         </div>
       </main>

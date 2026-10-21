@@ -84,7 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Guardrail Intelligence Engine" },
       {
         name: "description",
-        content: "Franklin GIE demonstration MVP for MSP security guardrails.",
+        content: "Franklin Guardrail Intelligence Engine for MSP security guardrails.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

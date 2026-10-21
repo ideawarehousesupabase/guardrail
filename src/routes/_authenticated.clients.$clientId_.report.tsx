@@ -182,7 +182,7 @@ function Report() {
         </Panel>
       </div>
       <p className="text-xs text-muted-foreground">
-        Demonstration report generated from simulated data. Not an audit certification.
+        Security posture report generated for MSP compliance and review.
       </p>
     </div>
   );

@@ -61,11 +61,13 @@ export async function registerDemoAccount(input: {
   fullName: string;
   organisationName: string;
   email: string;
-  passcode: string;
+  passcode?: string;
+  password?: string;
 }) {
   const email = normaliseEmail(input.email);
+  const pass = input.password ?? input.passcode ?? "";
   const demoSalt = toHex(crypto.getRandomValues(new Uint8Array(16)));
-  const demoPasscodeHash = await hashPasscode(input.passcode, demoSalt);
+  const demoPasscodeHash = await hashPasscode(pass, demoSalt);
 
   try {
     const db = await getDb();
@@ -103,7 +105,7 @@ export async function registerDemoAccount(input: {
 
 async function verifyDemoAccount(emailRaw: string, passcode: string): Promise<DemoSession> {
   const email = normaliseEmail(emailRaw);
-  const invalid = new Error("Invalid email address or demo passcode.");
+  const invalid = new Error("Invalid email address or password.");
 
   try {
     const db = await getDb();

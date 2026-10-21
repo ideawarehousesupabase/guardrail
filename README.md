@@ -1,6 +1,6 @@
-# Franklin — Guardrail Intelligence Engine (GIE) · Demonstration MVP
+# Franklin — Guardrail Intelligence Engine (GIE)
 
-A frontend demonstration of the Year 1 GIE MVP for MSPs: per-client guardrail composition, drift monitoring, exception governance, an evidence-by-default ledger and a printable client security report.
+Year 1 GIE for MSPs: per-client guardrail composition, drift monitoring, exception governance, an evidence-by-default ledger and a printable client security report.
 
 ## Run
 

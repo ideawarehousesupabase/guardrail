@@ -72,7 +72,7 @@ export function AppSidebar() {
       </SidebarContent>
       <SidebarFooter className="group-data-[collapsible=icon]:hidden">
         <p className="rounded-md bg-sidebar-accent px-3 py-2 text-[11px] leading-snug text-sidebar-foreground/80">
-          Demonstration MVP — all security data is simulated.
+          Guardrail Intelligence Engine · MSP Edition
         </p>
       </SidebarFooter>
     </Sidebar>
